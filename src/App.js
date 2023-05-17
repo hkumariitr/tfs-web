@@ -1,4 +1,5 @@
 import './App.css';
+import Main from './components/mainpage/mainpage';
 import Navbar from "./components/navbar/navbar.jsx"
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
     
     <Navbar />
+    <Main />
     <h1> Hello</h1>
     </>
   )
