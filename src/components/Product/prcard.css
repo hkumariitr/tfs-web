@@ -22,7 +22,9 @@
 .pr-img {
     
     border-radius: 50%;
-    width: 15vw;
+    width: 75%;
+    height: 85%;
+    background: #e0f4eb;
 }
 .text-container{
     width: 100%;

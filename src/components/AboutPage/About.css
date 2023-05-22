@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+.bgImage{
+    box-shadow: 0px 4px 4px rgba(38, 67, 36, 0.86);
+
+    position: relative;
+    padding: 0px;
+}
+
+/* .page1{
+    margin: -3px;
+    width: 100%;
+    height: 30%;  
+} */
+
+.box1{
+    margin: 5% 0% 5% 1.5% ;
+    color: aliceblue;
+    float: left;
+    height: 68%;
+    width: 45%;
+    padding: 1%;
+    /* padding-top: 5%; */
+    /* padding-bottom: 5%; */
+}
+
+.para{
+    padding-left: 2%;
+    width: 100%;
+    height: 135%;
+}
+
+.Founded{
+    font-size: 240%;
+    margin: 1% 5% 0% 5%;
+    padding: 1%;
+}
+
+.By{
+    font-size: 200%;
+    margin: 0% 5% 0% 5%;
+    padding: 1%;
+}
+
+.content{
+    font-size: 150%;
+    padding: 1%;
+    margin: 0% 0% 0% 5.5%;
+    width: 60%;
+    
+}
+
+.box2{
+    margin: 4% 1.5% 4% 0% ;
+    color: aliceblue;
+    float: right;
+    height: 55%;
+    width: 45%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: block;
+}
+
+.descriptionBox{
+    
+    float: left;
+    width: 70%;
+    height: 13rem;
+    background-color: rgba(109, 111, 107, 0.6);
+    border-radius: 3% 0% 0% 0% ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.name{
+    margin: 12% 6% 5% 6%;
+    margin-bottom: 0%;
+    padding: 1%;
+}
+
+.post{
+    font-size: 105%;
+    margin: 0% 0% 10% 6%;
+    margin-top: 0%;
+    padding: 1%;
+}
+
+.pic{
+    float: right;
+    width: 30%;
+    height: 13rem;
+    background-color: rgba(109, 111, 107, 0.6);
+    border-radius: 0% 0% 4% 0%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.ceo{
+    width: 105%;
+    height: 13rem;
+}
+
+
