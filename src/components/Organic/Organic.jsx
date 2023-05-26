@@ -1,6 +1,6 @@
 import React from "react";
 import honey from "./img/honey.png"
-import ProductCard from "../Product/prcard";
+import ProductCard from "../PrCard/prcard";
 import "./Organic.css"
 
 export default function Organic(){
