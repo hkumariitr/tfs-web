@@ -2,15 +2,22 @@ import './App.css';
 import Main from './components/mainpage/mainpage';
 import Navbar from "./components/navbar/navbar.jsx"
 import About from "./components/AboutPage/About.jsx"
+import Products from './components/Products/Products';
+import AboutUs from './components/AboutUS/AboutUs';
+import Achievements from './components/Achievements/Achievements';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
     
     <Navbar />
-    <Main />
-    <h1> Hello</h1>
+    <Products />
+    <AboutUs/>
+    <Achievements/>
     <About/>
+    <Footer/>
+    
     </>
   )
 }

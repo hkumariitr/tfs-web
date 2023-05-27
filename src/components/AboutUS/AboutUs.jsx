@@ -1,31 +1,9 @@
 import React from "react";
-import "./mainpage.css";
-import tfscover from "./img/tfs-cover.png"
-import Health from "../Health/Health"
-import Organic from "../Organic/Organic";
+import "./AboutUs.css"
 import Aboutimg from "./img/aboutimg.png"
 
-export default function Main(){
+const AboutUs = ()=>{
     return(
-        <>
-        <div>
-        <img className="tfs-cover" src = {tfscover}/>
-        </div>
-
-        <div className=" products-section">
-
-            <div className="pr-section-1">
-                <div className="head"> <p> Health Products </p>  </div>
-                <Health />
-            </div>
-
-            <div className="pr-section-2">
-                <div className="head"> <p> Organic Products </p>  </div>
-                <Organic />
-            </div>
-
-        </div>
-
         <div className="about-us-section">
             <div className="about-text-container">
                 <h2>About Us</h2>
@@ -35,13 +13,8 @@ export default function Main(){
                 <img className="about-image" src = {Aboutimg} />
             </div>
         </div>
-
-
-        <div className="achievements-section">
-            <div className="head"> <p> Our achievements </p>  </div>
-        </div>
-
-        </>
-        
     )
+    
 }
+
+export default AboutUs;

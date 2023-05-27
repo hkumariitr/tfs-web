@@ -1,0 +1,53 @@
+.carousels-main-container{
+    width: 100vw;
+    margin: 0;
+    height: 40vh;
+    display: grid;
+    padding: 40px 0;
+    
+    align-items: center;
+    justify-items: center;
+  }
+  
+  
+.carousels-section{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    --v-offset: 60px;
+    --curve-height: 120px;
+  }
+  .carousels-section:before, .carousels-section:after {
+    content: "";
+    display: block;
+    background: white;
+    
+    width: calc(100vw + 2 * var(--v-offset));
+    height: var(--curve-height);
+    position: absolute;
+    border-radius: 50%;
+    left: calc(-1 * var(--v-offset));
+    right: calc(-1 * var(--v-offset));
+  }
+  .carousels-section:before {
+    top: calc(-0.6 * var(--curve-height));
+  }
+  .carousels-section:after {
+    bottom: calc(-0.6 * var(--curve-height));
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-rows: 300px;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    overflow: auto;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  .wrapper img {
+
+    scroll-snap-align: center;
+    height: 100%;
+    object-fit: cover;
+  }
