@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.main-exhibition-container{
+    margin: 1.5rem 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exhibition-text-container{
+    margin-top: 3rem;
+    margin-bottom: 0;
+    font-style: normal;
+    font-family: 'Kanit', sans-serif;
+    font-size: 4rem;
+    line-height: 59px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    /* sky blue */
+
+    background: rgb(131,58,180);
+background: linear-gradient(166deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
