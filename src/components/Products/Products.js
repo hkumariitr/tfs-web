@@ -9,7 +9,7 @@ import ProductCard from "../PrCard/prcard";
 
 const Products = ()=>{
     return(
-        <div className="products-container">
+        <div className="products-container" id = "products">
             <div className="products-head">
                 Our Products
             </div>

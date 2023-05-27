@@ -8,11 +8,10 @@ import IG from "./img/ig.png"
 
 const Footer = () => {
     return(
-        <div className="footer-container">
+        <div className="footer-container" id = "contact">
         <div className="footer-subcontainer">
             <div className="logo-container"> <img src = {Logo} className="logoimg"/> </div>
-            <div className="address"> <p>B1/H3, Mohan Co-operative Industrial Area,
-                                        Mathura Road, New Delhi - 110044 </p> </div>
+            <div className="address"> <p>Roorkee, Haridwar, Uttarakhand 247667 </p> </div>
             <div className="social-icons"> 
                 <div> <img className="fbicon" src = {FB}/> </div>
                 <div> <img className="twicon" src = {TW}/> </div>

@@ -5,7 +5,7 @@ import Carousels from "./Carousels/Carousels";
 const Achievements = ()=>{
     return(
         <>
-            <div className="main-exhibition-container">
+            <div className="main-exhibition-container" id = "achievements">
                 <div className="exhibition-text-container">
                     OUR ACHIEVEMENTS
                 </div>
