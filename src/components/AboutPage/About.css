@@ -102,3 +102,19 @@
 }
 
 
+@media only screen and (max-width: 800px) {
+    .bgImage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bgImage div{
+        width: 100%;
+    }
+
+    .box2{
+        display: none;
+    }
+}

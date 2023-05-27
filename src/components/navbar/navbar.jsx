@@ -4,6 +4,7 @@ import React,{useEffect} from 'react';
 import './navbar.scss';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-scroll';
 
 
 const Navbar=() => {
@@ -48,7 +49,7 @@ const Navbar=() => {
   }
 
   return (
-    <div className='landing-container'>
+    <div className='landing-container' id = "home">
     <header className={x.join(" ")}>
         <div className="logo">
           <img src={tfslogo} alt="Logo" title="Logo" />
@@ -59,11 +60,12 @@ const Navbar=() => {
 
         <nav className="navigation">
             <ul>
-              <li><a href="#post1">Home</a></li>
-              <li><a href="#post2">Products</a></li>
-              <li><a href="#post3">Achievements</a></li>
-              <li><a href="#post4">Gallery</a></li>
-              <li><a href="#post5">About Us</a></li>
+              <li> <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}> Home </Link> </li>
+              <li> <Link activeClass="active" to="products" spy={true} smooth={true} offset={-100} duration={500}> Products </Link></li>
+              <li> <Link activeClass="active" to="aboutus" spy={true} smooth={true} offset={-100} duration={500}> About</Link></li>
+              <li> <Link activeClass="active" to="achievements" spy={true} smooth={true} offset={-100} duration={500}>Achievements</Link></li>
+              <li> <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500}> Contact</Link> </li>
+              
             </ul>
         </nav>
 
@@ -72,11 +74,11 @@ const Navbar=() => {
         </div>
 
         <div className={y.join(" ")}>
-              <li><a href="#post1">Home</a></li>
-              <li><a href="#post2">Products</a></li>
-              <li><a href="#post3">Achievements</a></li>
-              <li><a href="#post4">Gallery</a></li>
-              <li><a href="#post5">About Us</a></li>
+        <li > <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} onClick={handletoggleclick}> Home </Link> </li>
+              <li> <Link activeClass="active" to="products" spy={true} smooth={true} offset={-100} duration={500} onClick={handletoggleclick}> Products </Link></li>
+              <li> <Link activeClass="active" to="aboutus" spy={true} smooth={true} offset={-100} duration={500} onClick={handletoggleclick}> About</Link></li>
+              <li> <Link activeClass="active" to="achievements" spy={true} smooth={true} offset={-100} duration={500} onClick={handletoggleclick}>Achievements</Link></li>
+              <li> <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={handletoggleclick}> Contact</Link> </li>
             
         </div>
 

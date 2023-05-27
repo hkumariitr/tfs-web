@@ -16,7 +16,9 @@
 }
 
 .navbar{
-  
+  position: fixed;
+
+  z-index: 15;
   padding: 0.2rem 2rem;
     margin-left: 5vw;
     // margin-top: 2vh;
@@ -51,6 +53,13 @@
   .logo img{
     width: 3rem;
   }
+
+  .navigation li:hover{
+    border-bottom: 0.2rem solid white;
+    margin-bottom: 0.2rem;
+
+  }
+
   
   .navigation{
     ul{
@@ -66,10 +75,7 @@
         text-align: center;
         padding: .5em;
         cursor: pointer;
-        &:hover{
-          background-color: plum;
-          color: white;
-        }
+        
       }
   
       li a{
@@ -105,10 +111,10 @@
 .dropdown_menu{
   display: none;
   position: absolute;
-  right:1rem;
-  top: 4rem;
-  width: 18 rem;
-  background: rgba(0, 158, 206, 0.8);
+  right:0.2rem;
+  top: 5.5rem;
+  width: 15 rem;
+  background: rgb(20, 18, 18);
   backdrop-filter: blur(1rem);
   border-radius: 0.8rem;
   overflow: hidden;
@@ -121,7 +127,8 @@
 }
 
 .dropdown_menu li{
-  width: 18rem;
+  cursor: pointer;
+  width: 12rem;
   padding: 0.7rem;
   display: flex;
   align-items: center;
@@ -129,9 +136,9 @@
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: 1rem;
 
-line-height: 22px;
+line-height: 1.2rem;
 /* identical to box height */
 
 text-align: center;
@@ -140,6 +147,11 @@ text-align: center;
 
 color: white;
 text-decoration: none;
+}
+
+.dropdown_menu li:hover{
+  color: aqua;
+
 }
 
 .dropdown_menu li a{
@@ -163,5 +175,20 @@ text-decoration: none;
 
   .dropdown_menu{
     display: block;
+  }
+
+  .landing-container {
+    background: url("./img/tfscovermob.svg");
+    width: 100vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width:800px) {
+  .navtext{
+    font-size: 1rem;
   }
 }
