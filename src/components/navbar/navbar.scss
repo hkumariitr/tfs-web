@@ -192,3 +192,25 @@ text-decoration: none;
     font-size: 1rem;
   }
 }
+
+  @media only screen and (max-width: 400px) {
+    .navtext{
+      font-size: 0.5rem;
+      margin-left: 1rem;
+    }
+
+    .logo img{
+      padding: 0.2rem 0.5rem;
+      width: 1.5rem;
+      margin-left: 1rem;
+    }
+
+    .landing-container {
+      background: url("./img/tfscovermobsmall.svg");
+      width: 100vw;
+    height: 100vh;
+  
+    background-size: cover;
+    background-position: center;
+    }
+}
