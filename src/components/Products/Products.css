@@ -79,3 +79,15 @@
 
 
 }
+
+@media only screen and (max-width: 400px) {
+
+   
+    .products-card-container{
+        width: 70vw;
+        padding: 0.5rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+}
