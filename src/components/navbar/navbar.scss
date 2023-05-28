@@ -6,7 +6,7 @@
 .landing-container{
   width: 100vw;
   height: 100vh;
-  background: url(./img/tfscoverlarge.svg) ;
+  background: url("./img/tfscoverlarge.png") ;
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -178,7 +178,7 @@ text-decoration: none;
   }
 
   .landing-container {
-    background: url("./img/tfscovermob.svg");
+    background: url("./img/tfscovermob.png");
     width: 100vw;
   height: 100vh;
 
@@ -195,7 +195,7 @@ text-decoration: none;
 
   @media only screen and (max-width: 400px) {
     .navtext{
-      font-size: 0.5rem;
+      font-size: 0.8rem;
       margin-left: 1rem;
     }
 
@@ -206,7 +206,7 @@ text-decoration: none;
     }
 
     .landing-container {
-      background: url("./img/tfscovermobsmall.svg");
+      background: url("./img/tfscovermobsmall.png");
       width: 100vw;
     height: 100vh;
   
