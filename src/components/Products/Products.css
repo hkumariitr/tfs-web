@@ -40,7 +40,7 @@
 
 .products-card-container{
     width: 80vw;
-    padding: 1rem 5rem;
+    padding: 1rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -55,7 +55,7 @@
 
     .products-card-container{
         width: 90vw;
-        padding: 0.5rem 5rem;
+        padding: 0.5rem 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -72,7 +72,7 @@
 
     .products-card-container{
         width: 90vw;
-        padding: 0.5rem 5rem;
+        padding: 0.5rem 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -85,7 +85,7 @@
    
     .products-card-container{
         width: 70vw;
-        padding: 0.5rem 5rem;
+        padding: 0.5rem 0;
         display: grid;
         grid-template-columns: 1fr ;
     }
