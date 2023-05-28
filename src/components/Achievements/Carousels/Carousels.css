@@ -46,7 +46,7 @@
         scroll-snap-type: x mandatory;
   }
   .wrapper img {
-
+    
     scroll-snap-align: center;
     height: 100%;
     object-fit: cover;
