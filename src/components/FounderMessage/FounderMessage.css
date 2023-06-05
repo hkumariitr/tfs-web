@@ -1,0 +1,49 @@
+.mobile-msg-container{
+    display: none;
+}
+
+.msg-container{
+    margin: 1rem 2rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap:10vw;
+
+}
+
+
+.msg-container::-webkit-scrollbar {
+    width: 16px;
+  }
+
+ 
+::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #d4aa70;
+    border-radius: 100px;
+  }
+
+.msg-container img{
+    width: 60vw;
+    border-radius: 4vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .msg-container{
+        display: none;
+    }
+    .mobile-msg-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-msg-container img {
+        width: 100vw;
+    }
+}

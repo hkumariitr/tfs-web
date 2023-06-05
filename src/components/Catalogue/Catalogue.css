@@ -1,0 +1,55 @@
+.mobile-msg-container{
+    display: none;
+}
+
+.catalogue-container{
+    margin: 1rem 2rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap:5vw;
+
+}
+
+
+.catalogue-container::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+ 
+::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #d4aa70;
+    border-radius: 100px;
+  }
+
+.catalogue-container img{
+    width: 50vw;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .catalogue-container{
+        width: 90vw;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        gap:5vh;
+        height: 38rem;
+        overflow-x: hidden;
+    
+    }
+    .catalogue-container img{
+        width: 90vw;
+        
+    
+    }
+}

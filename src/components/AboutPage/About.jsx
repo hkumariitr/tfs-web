@@ -1,52 +1,42 @@
-import React from "react";
+import React, { useState } from 'react';
+import  SliderData from './SliderData';
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import "./About.css"
 
-import "./About.css";
-import ceo from "./img/ceo.png";
+const ImageSlider = ({ slides }) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
 
-export default function Organic(){
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
 
-    return(
-    // <div className="container">
-        
-    //     <img className="page1" src={page1} />
-       
-    // </div>
-    <div className="bgImage" style={{
-        // margin: "-3px",
-        width: "100%",
-        height: "30rem",
-        backgroundImage: `url(${require('./img/Bg.png')})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",   
-       }} >
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
 
-        <div className="box1">
-            <div className="para">
-             <h3 className="Founded">Founded By</h3>
-             <h2 className="By">Organic Farmers</h2>
-             <p className="content">The Farmer’s Son is connecting you to the north as we are operating from Himachal Pradesh and Uttarakhand states, we are trying to connect you to the North Indian culture.</p> 
-             </div>
-        </div>
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
 
-        <div className="box2">
-            
+  return (
+    <section className='slider'>
+      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
+      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+      {SliderData.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? 'slide active' : 'slide'}
+            key={index}
+          >
+            {index === current && (
+              <img src={slide.image} alt='travel image' className='image' />
+            )}
+          </div>
+        );
+      })}
+    </section>
+  );
+};
 
-            <div className="descriptionBox">
-            <h1 className="name">Shubham Kumar Saini</h1>
-            <p className="post">An Organic Farmer, Co-Founder & CEO, The  Farmer's Son</p>
-            </div>
-
-            <div className="pic">
-             <img className="ceo" src={ceo}  />
-            </div>
-            
-
-        </div>
-        
-        
-        
-        
-         </div>
-
-    )
-}
+export default ImageSlider;

@@ -1,0 +1,22 @@
+
+import FounderThumb from "./img/ceothumb.png"
+import DirectorThumb from "./img/Director.png"
+import ManagerThumb from "./img/MgDirector.png"
+
+const SliderData = [
+  {
+    image:
+      {FounderThumb}
+  },
+  {
+    image:
+    {DirectorThumb}
+  },
+  {
+    image:
+    {ManagerThumb}  
+},
+  
+];
+
+export default {SliderData};
