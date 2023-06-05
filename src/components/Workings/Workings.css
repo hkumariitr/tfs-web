@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+.workings-container{
+    padding:2rem 0 ;
+    padding-bottom: 3rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;    
+    
+    
+}
+
+.workings-container h4{
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    margin: 2rem;
+    text-align: center;
+    
+}
+
+.working-section{
+    width: 80vw;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(166deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(23,79,66,1) 100%); */
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+        color:white;
+
+    margin: 0 1.5rem;
+    padding: 1.5rem ;
+    display: flex;
+
+    height: 15rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.working-text-container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.working-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.working-image{
+    width: 50%;
+    border-radius: 1.5rem;
+    transition: all ease-in-out 0.5s;
+}
+.working-image:hover{
+    width: 60%;
+    border: solid white 0.2rem ;
+    border-radius: 1.5rem;
+}
+
+.working-text-container h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    
+}
+
+.working-text-container h2 .mob-head{
+    display: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    
+}
+
+.working-text-container p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.odd{
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 800px) {
+    .working-section{
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .working-text-container{
+        padding: 0;
+        margin: 2rem 0;
+        width: 90%;
+        
+    }
+
+    .working-text-container h2{
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.5rem;
+        margin: 0;
+        
+    }
+
+    .working-text-container p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 1.3rem;
+        font-size: 0.8rem;
+    }
+
+    .working-image{
+        margin-bottom: 1rem;
+        width: 100%;
+        border-radius: 1.5rem;
+        transition: all ease-in-out 0.5s;
+    }
+    .working-image:hover{
+        width: 110%;
+        border-radius: 0.8rem;        
+        transition: all ease-in-out 0.5s;
+    }
+
+    .mob-head{
+        display: block;
+    }
+
+    .desktop-head{
+        display: none;
+    }
+    .workings-container h4{
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.7rem;
+    }
+}
