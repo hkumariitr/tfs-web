@@ -1,7 +1,6 @@
-import FounderThumb from "./img/ceothumb.png"
-import DirectorThumb from "./img/directorthumb.png"
-import ManagerThumb from "./img/managingdirthumb.png"
-import MobViewMsg from "./img/aboutphoneview.png"
+import FounderThumb from "./img/ceothumb2.png"
+import DirectorThumb from "./img/directorthumb2.png"
+import MobViewMsg from "./img/mobileview2.png"
 import "./FounderMessage.css"
 
 import React, { useEffect } from "react";
@@ -25,7 +24,7 @@ const FounderMessage = ()=>{
         <div className="msg-container">
             <img src= {FounderThumb} alt = ''/>
             <img id ="middle" src= {DirectorThumb} alt = ''/>
-            <img src= {ManagerThumb} alt = ''/>
+            
         </div>
 
         <div className="mobile-msg-container">
